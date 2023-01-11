@@ -1,9 +1,13 @@
+using GiphyFetcher.Interfaces;
+using GiphyFetcher.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services.AddControllers();
+    builder.Services.AddHttpClient<ISearchTermService, SearchTermService>();
+
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
-
     builder.Services.AddDistributedMemoryCache();
 }
 
