@@ -1,4 +1,6 @@
-﻿namespace GiphyFetcher.Models
+﻿using Contracts;
+
+namespace GiphyFetcher.Models
 {
     public class TrendingModel
     {
@@ -43,6 +45,11 @@
             }
 
             return new TrendingModel(limit, rating, errors);
+        }
+
+        public static TrendingModel From(CreateTrendingRequest request)
+        {
+            return CreateTrending(request.Limit, request.Rating);
         }
     }
 }
