@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GiphyFetcher", "GiphyFetcher\GiphyFetcher.csproj", "{43BAA5DD-7AC0-43D3-8D68-68021AC7014B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{70436D90-624F-4997-BC35-0976156155F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{DF662CD6-3048-4685-807F-40D1A334EEA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{43BAA5DD-7AC0-43D3-8D68-68021AC7014B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43BAA5DD-7AC0-43D3-8D68-68021AC7014B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43BAA5DD-7AC0-43D3-8D68-68021AC7014B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF662CD6-3048-4685-807F-40D1A334EEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF662CD6-3048-4685-807F-40D1A334EEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF662CD6-3048-4685-807F-40D1A334EEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF662CD6-3048-4685-807F-40D1A334EEA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF662CD6-3048-4685-807F-40D1A334EEA5} = {70436D90-624F-4997-BC35-0976156155F7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F678435-93B7-4856-B96E-43DA4C4310B1}
